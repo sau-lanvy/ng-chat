@@ -6,3 +6,5 @@ Open the command line:
 1. npm install
 2. ng build
 3. dotnet run
+
+<img src="https://github.com/sau-lanvy/ng-chat/blob/master/ngchat.gif" />
