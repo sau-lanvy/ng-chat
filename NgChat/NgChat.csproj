@@ -11,7 +11,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="SignalR\" />
+    <Folder Include="Hubs\" />
+    <Folder Include="src\app\auth\containers\" />
+    <Folder Include="src\app\auth\components\" />
+    <Folder Include="src\app\auth\models\" />
+    <Folder Include="src\app\auth\services\" />
+    <Folder Include="src\app\chat\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
 

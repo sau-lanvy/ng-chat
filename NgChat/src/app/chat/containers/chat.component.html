@@ -1,0 +1,16 @@
+<div class="chat_window">
+  <app-chat-nav></app-chat-nav>
+  <ul class="messages msg-container-base">
+    <li *ngFor="let message of allMessages; let i = index" [ngClass]="{'left': i%2 === 0, 'right': i%2 !== 0}" class="message appeared">
+      <app-chat-message [message]="message"></app-chat-message>
+    </li>
+  </ul>
+  <div class="bottom_wrapper clearfix">
+    <form class="form-inline" (ngSubmit)="sendMessage()" #messageForm="ngForm">
+      <mat-form-field class="full-width">
+        <input matInput [(ngModel)]="currentMessage.content" name="content" id="content" required placeholder="Type your message here...">
+      </mat-form-field>
+      <button mat-raised-button color="primary" type="submit" [disabled]="!messageForm.valid">Send Message</button>
+    </form>
+  </div>
+</div>

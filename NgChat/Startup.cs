@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -9,7 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using System.IO;
 using Swashbuckle.AspNetCore.Swagger;
 using Microsoft.Extensions.Configuration;
-using NgChat.SignalR;
+using NgChat.Hubs;
 
 namespace NgChat
 {
